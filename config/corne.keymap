@@ -21,7 +21,7 @@
 // |             |      Q      |      W      |      E      |      R      |      T      |   |      Y      |      U      |      I      |      O      |      P      |            |
         &trans        &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P        &trans
 // |             |      A      |      S      |      D      |      F      |      G      |   |      H      |      J      |      K      |      L      |      Æ      |            |
-        &trans       &mt DK_AE DKAA         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L    &kp DK_AE      &trans
+        &trans       &mt DK_AE DK_AA         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L    &kp DK_AE      &trans
 // |             |      Z      |      X      |      C      |      V      |      B      |   |      N      |      M      |      ,      |      .      |      Ø      |            |
         &trans       &kp DK_OE      &kp X         &kp C         &kp V         &kp B             &kp N         &kp M       &kp COMMA      &kp DOT      &kp DK_OE      &trans
 //                             |     CMD     |     LWR     |     SPC     |   |     ENT     |     RSE     |     ALT     |
