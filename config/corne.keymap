@@ -59,7 +59,7 @@
 // |             |      Z      |      X      |      C      |      V      |      B      |   |      N      |      M      |      ,      |      .      |      Ø      |            |
         &trans       &kp Z          &kp X         &kp C         &kp V         &kp B             &kp N         &kp M       &kp COMMA      &kp DOT      &kp DK_OE      &trans
 //                                           |    SHIFT    |  LWR / TAB  |  CTRL / SPC |   |   CMD/ENT   |  RSE / BSPC |     ALT     |
-                                                &mt ESC LSHFT &lt 1 TAB   &mt LCTRL SPACE    &mt RGUI RET  &lt 2 BSPC    &kp RALT
+                                              &mt LSHFT ESC &lt 1 TAB   &mt LCTRL SPACE    &mt RGUI RET  &lt 2 BSPC    &kp RALT
                         >;
                 };
                 lower_layer {
