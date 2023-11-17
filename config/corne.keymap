@@ -13,20 +13,20 @@
 #define DK_OE SQT
 
 // Shifted characters
-#define DK_SECT LSFT(KC_GRV)  // §
-#define DK_EXLM LSFT(KC_1)    // !
-#define DK_DQUO LSFT(KC_2)    // "
-#define DK_HASH LSFT(KC_3)    // #
-#define DK_CURR LSFT(KC_4)    // ¤
-#define DK_PERC LSFT(KC_5)    // %
-#define DK_AMPR LSFT(KC_6)    // &
-#define DK_SLSH LSFT(KC_7)    // /
-#define DK_LPRN LSFT(KC_8)    // (
-#define DK_RPRN LSFT(KC_9)    // )
-#define DK_EQL  LSFT(KC_0)    // =
-#define DK_QUES LSFT(KC_MINS) // ?
-#define DK_SCLN LSFT(KC_COMM)	// ;
-#define DK_TICK LSFT(KC_EQL)	// `
+//#define DK_SECT LSFT(KC_GRV)  // §
+//#define DK_EXLM LSFT(KC_1)    // !
+//#define DK_DQUO LSFT(KC_2)    // "
+//#define DK_HASH LSFT(KC_3)    // #
+//#define DK_CURR LSFT(KC_4)    // ¤
+//#define DK_PERC LSFT(KC_5)    // %
+//#define DK_AMPR LSFT(KC_6)    // &
+//#define DK_SLSH LSFT(KC_7)    // /
+//#define DK_LPRN LSFT(KC_8)    // (
+//#define DK_RPRN LSFT(KC_9)    // )
+//#define DK_EQL  LSFT(KC_0)    // =
+//#define DK_QUES LSFT(KC_MINS) // ?
+//#define DK_SCLN LSFT(KC_COMM)	// ;
+//#define DK_TICK LSFT(KC_EQL)	// `
 
 // Alt-Gr keys
 //#define DK_AT   RALT(KC_2)      // @
@@ -36,8 +36,8 @@
 //#define DK_PIPE RALT(KC_EQL)	// |
 #define DK_LPRN LSFT(N8)	// (
 #define DK_RPRN LSFT(N9)	// )
-#define DK_LCBR RALT(RSHFT(8))  // {
-#define DK_RCBR RALT(RSHFT(9))	// }
+#define DK_LCBR RALT(RSHFT(N8))  // {
+#define DK_RCBR RALT(RSHFT(N9))	// }
 #define DK_LBRC RALT(N8)	// [
 #define DK_RBRC RALT(N9)	// ]
 //#define DK_ASTX LSFT(KC_NUHS)	// asterisk
@@ -69,7 +69,7 @@
 // |             |    BT 1    |     BT 2    |     BT 3    |             |             |   |             |             |             |             |      Å       |             | 
        &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &trans         &trans           &trans        &trans        &trans        &trans      &kp DK_AA       &trans
 //                                          |     GUI     |             |     SPC     |   |     ENT     |             |     ALT     |           
-                                                &kp LGUI      &trans       &kp SPACE          &kp RET        &trans       &kp RALT
+                                                &trans         &trans        &trans          &trans        &trans       &trans
                         >;
                 };
 
