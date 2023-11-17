@@ -28,7 +28,9 @@
 //#define DK_SCLN LSFT(KC_COMM)	// ;
 //define DK_TICK LSFT(KC_EQL)	// `
 #define DK_PLUS FSLH
-#define DK_MINUS PLUS
+#define DK_TICK PLUS
+#define DK_QUES UNDER
+
 
 // Alt-Gr keys
 //#define DK_AT   RALT(KC_2)      // @
@@ -81,8 +83,8 @@
        &trans       &kp EXCL       &kp AT      &kp HASH      &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp DK_LPRN  &kp DK_RPRN   &kp KP_MULTIPLY    &trans
 // |             |             |             |             |             |             |   |      -      |      =      |      {      |      }      |      \      |            |
        &trans         &trans        &trans        &trans        &trans        &trans         &kp DK_MINUS   &kp DK_MINUS    &kp DK_LCBR   &kp DK_RCBR     &kp BSLH        &trans
-// |             |             |             |             |             |             |   |      _      |      +      |      [      |      ]      |     "|"     |            |
-       &trans         &trans        &trans        &trans        &trans        &trans         &kp UNDER      &kp PLUS     &kp DK_LBRC   &kp DK_RBRC    &kp PIPE       &trans
+// |             |             |             |             |             |             |   |      _      |      +      |      [      |      ]      |     ?     |            |
+       &trans         &trans        &trans        &trans        &trans        &trans         &kp UNDER      &kp PLUS     &kp DK_LBRC   &kp DK_RBRC    DK_QUES      &trans
 //                                           |     CMD     |             |     SPC     |   |     ENT     |             |     ALT     |
                                                 &trans         &trans        &trans            &trans        &trans        &trans 
                         >;
