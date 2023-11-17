@@ -12,6 +12,38 @@
 #define DK_AE SEMI
 #define DK_OE SQT
 
+// Shifted characters
+#define DK_SECT LSFT(KC_GRV)  // §
+#define DK_EXLM LSFT(KC_1)    // !
+#define DK_DQUO LSFT(KC_2)    // "
+#define DK_HASH LSFT(KC_3)    // #
+#define DK_CURR LSFT(KC_4)    // ¤
+#define DK_PERC LSFT(KC_5)    // %
+#define DK_AMPR LSFT(KC_6)    // &
+#define DK_SLSH LSFT(KC_7)    // /
+#define DK_LPRN LSFT(KC_8)    // (
+#define DK_RPRN LSFT(KC_9)    // )
+#define DK_EQL  LSFT(KC_0)    // =
+#define DK_QUES LSFT(KC_MINS) // ?
+#define DK_SCLN LSFT(KC_COMM)	// ;
+#define DK_TICK LSFT(KC_EQL)	// `
+
+// Alt-Gr keys
+//#define DK_AT   RALT(KC_2)      // @
+//#define DK_PND  RALT(KC_3)      // £
+//#define DK_DOL  RALT(KC_4)	// $
+//#define DK_EUR  RALT(KC_5)	// €
+//#define DK_PIPE RALT(KC_EQL)	// |
+#define DK_LPRN LSFT(N8)	// (
+#define DK_RPRN LSFT(N9)	// )
+#define DK_LCBR RALT(RSHFT(8))  // {
+#define DK_RCBR RALT(RSHFT(9))	// }
+#define DK_LBRC RALT(N8)	// [
+#define DK_RBRC RALT(N9)	// ]
+//#define DK_ASTX LSFT(KC_NUHS)	// asterisk
+//#define DK_BSLH RALT(KC_NUBS)	// backslash
+//#define DK_TILD RALT(KC_RBRC) // ~
+
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -32,10 +64,10 @@
                         bindings = <
 // |             |     1      |      2      |      3      |      4      |      5      |   |      6      |      7      |      8      |      9      |      0      |             |   
        &trans        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9       &kp N0         &trans
-// |             |    BT1     |     BT2     |     BT3     |     BT4     |     BT5     |   |             |     LFT     |      DWM    |     UP      |     RGT     |             |
-       &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &trans       &kp LEFT      &kp DOWN       &kp UP      &kp RIGHT        &trans
-// |             |  VOL DOWN  |    VOL UP   |     PLAY    |     PREV    |     NEXT    |   |             |             |             |             |      Å       |             | 
-       &trans     &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PP     &kp C_PREV   &kp C_NEXT           &trans        &trans        &trans        &trans      &kp DK_AA       &trans
+// |             |   VOL DWN  |   VOL UP    |      PP     |     PREV    |     NEXT    |   |             |     LFT     |      DWM    |     UP      |     RGT     |             |
+       &trans     &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PP    &kp C_PREV    &kp C_NEXT           &trans       &kp LEFT      &kp DOWN       &kp UP      &kp RIGHT        &trans
+// |             |    BT 1    |     BT 2    |     BT 3    |             |             |   |             |             |             |             |      Å       |             | 
+       &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &trans         &trans           &trans        &trans        &trans        &trans      &kp DK_AA       &trans
 //                                          |     GUI     |             |     SPC     |   |     ENT     |             |     ALT     |           
                                                 &kp LGUI      &trans       &kp SPACE          &kp RET        &trans       &kp RALT
                         >;
@@ -44,11 +76,11 @@
                 raise_layer {
                         bindings = <
 // |             |      !      |      @      |      #      |      $      |      %      |   |      ^      |      &      |      (      |      )      |      *      |            | 
-       &trans       &kp EXCL       &kp AT      &kp HASH      &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS       &kp LPAR      &kp RPAR   &kp KP_MULTIPLY    &trans
+       &trans       &kp EXCL       &kp AT      &kp HASH      &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp DK_LPRN  &kp DK_RPRN   &kp KP_MULTIPLY    &trans
 // |             |             |             |             |             |             |   |      -      |      =      |      {      |      }      |      \      |            |
-       &trans         &trans        &trans        &trans        &trans        &trans         &kp MINUS      &kp EQUAL      &kp LBRC    &kp RBRC       &kp BSLH        &trans
+       &trans         &trans        &trans        &trans        &trans        &trans         &kp MINUS      &kp EQUAL    &kp DK_LCBR   &kp DK_RCBR     &kp BSLH        &trans
 // |             |             |             |             |             |             |   |      _      |      +      |      [      |      ]      |     "|"     |            |
-       &trans         &trans        &trans        &trans        &trans        &trans         &kp UNDER      &kp PLUS        &kp LBKT     &kp RBKT      &kp PIPE       &trans
+       &trans         &trans        &trans        &trans        &trans        &trans         &kp UNDER      &kp PLUS     &kp DK_LBRC   &kp DK_RBRC    &kp PIPE       &trans
 //                                           |     CMD     |             |     SPC     |   |     ENT     |             |     ALT     |
                                                  &kp LGUI       &trans      &kp SPACE          &kp RET         &trans      &kp RALT
                         >;
