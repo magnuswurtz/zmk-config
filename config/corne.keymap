@@ -60,7 +60,7 @@
 
         combos {
             compatible = "zmk,combos";
-            COMBO(AA, &kp DK_AA, 25 34) // z & ø giver å 
+            COMBO(AA, &kp DK_AA, 13 22) // z & ø giver å 
             COMBO(LOCK, &kp C_PWR, 1 10)
         };
 
