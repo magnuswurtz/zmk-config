@@ -61,7 +61,7 @@
         combos {
             compatible = "zmk,combos";
             COMBO(AA, &kp DK_AA, 25 34) // z & ø giver å 
-            COMBO(LOCK, &kp , 1 10)
+            COMBO(LOCK, &kp C_PWR, 1 10)
         };
 
         keymap {
