@@ -48,7 +48,20 @@
 //#define DK_BSLH RALT(KC_NUBS)	// backslash
 //#define DK_TILD RALT(KC_RBRC) // ~
 
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <50>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
+
 / {
+
+        combos {
+        compatible = "zmk,combos";
+        COMBO(AA, &kp DK_AA, 25 34) // z & ø giver å 
+        };
         keymap {
                 compatible = "zmk,keymap";
 
