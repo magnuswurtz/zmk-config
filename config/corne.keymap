@@ -59,9 +59,11 @@
 / {
 
         combos {
-        compatible = "zmk,combos";
-        COMBO(AA, &kp DK_AA, 25 34) // z & ø giver å 
+            compatible = "zmk,combos";
+            COMBO(AA, &kp DK_AA, 25 34) // z & ø giver å 
+            COMBO(LOCK, &kp , 1 10)
         };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -97,7 +99,7 @@
 // |             |             |             |             |             |             |   |      -      |      =      |      {      |      }      |      \      |            |
        &trans         &trans        &trans        &trans        &trans        &trans         &kp DK_MINUS   &kp DK_MINUS    &kp DK_LCBR   &kp DK_RCBR     &kp BSLH        &trans
 // |             |             |             |             |             |             |   |      _      |      +      |      [      |      ]      |     ?     |            |
-       &trans         &trans        &trans        &trans        &trans        &trans         &kp UNDER      &kp PLUS     &kp DK_LBRC   &kp DK_RBRC    DK_QUES      &trans
+       &trans         &trans        &trans        &trans        &trans        &trans         &kp UNDER      &kp PLUS     &kp DK_LBRC   &kp DK_RBRC    &kp DK_QUES      &trans
 //                                           |     CMD     |             |     SPC     |   |     ENT     |             |     ALT     |
                                                 &trans         &trans        &trans            &trans        &trans        &trans 
                         >;
