@@ -28,6 +28,7 @@
 #define DK_SLH AMPERSAND // ERROR
 #define DK_AMPS CARET // ampersand
 #define DK_DLLR NUBS 
+#define DK_UNDER LS(FSLH)
 
 // Alt-Gr keys
 #define DK_TICK BSLH // 
@@ -67,7 +68,7 @@
 // |             |      Z      |      X      |      C      |      V      |      B      |   |      N      |      M      |      ,      |      .      |      Ø      |            |
         &trans       &kp Z          &kp X         &kp C         &kp V         &kp B             &kp N         &kp M       &kp COMMA      &kp DOT      &kp DK_OE      &trans
 //                                           |    SHIFT    |  LWR / TAB  |  CTRL / SPC |   |   CMD/ENT   |  RSE / BSPC |     ALT     |
-                                              &mt LSHFT ESC &lt 1 TAB   &mt LCTRL SPACE    &mt RGUI RET  &lt 2 BSPC    &kp RALT
+                                              &mt RALT ESC &lt 1 TAB   &mt RGUI SPACE    &mt LCTRL RET  &lt 2 BSPC    &kp LSHFT
                         >;
                 };
                 lower_layer {
@@ -85,12 +86,12 @@
 
                 raise_layer {
                         bindings = <
-// |             |      !      |      "      |      #      |      $      |      %      |   |      &      |      /      |      {      |      }      |      *      |            | 
-        &trans       &kp EXCL     &kp DK_QUOTE   &kp HASH      &kp DK_DLLR   &kp PRCNT      &kp DK_AMPS &mt DK_BSLH DK_SLH &kp DK_LCBR  &kp DK_RCBR   &kp KP_MULTIPLY    &trans
+// |             |      !      |      "      |      #      |      $      |      %      |   |      &      |      /      |      {      |      }      |     ?       |            | 
+        &trans       &kp EXCL     &kp DK_QUOTE   &kp HASH      &kp DK_DLLR   &kp PRCNT      &kp DK_AMPS &mt DK_BSLH DK_SLH &kp DK_LCBR  &kp DK_RCBR   &kp DK_QUES    &trans
 // |             |             |             |             |             |             |   |      *      |      +      |       (     |      )      |      \      |            |
        &trans        &trans     &kp DK_LBRC   &kp  DK_RBRC   &kp DK_EQ       &trans         &kp KP_MULTIPLY &kp DK_PLUS  &kp DK_LPRN  &kp DK_RPRN     &kp BSLH        &trans
-// |             |             |             |             |             |             |   |      _      |      -      |    SEMI     |    COLON    |      ?      |            |
-       &trans         &trans     &kp DK_LESS   &kp DK_MORE   &kp DK_PIPE     &trans          &kp UNDER     &kp DK_MINUS   &kp DK_SEMI  &kp DK_COLON  &kp DK_QUES      &trans
+// |             |             |             |             |             |             |   |      _      |      -      |    SEMI     |    COLON    |             |            |
+       &trans         &trans     &kp DK_LESS   &kp DK_MORE   &kp DK_PIPE     &trans          &kp DK_UNDER &kp DK_MINUS   &kp DK_SEMI  &kp DK_COLON  &kp DK_QUES      &trans
 //                                           |     CMD     |             |     SPC     |   |     ENT     |             |     ALT     |
                                                 &trans         &trans        &trans            &trans        &trans        &trans 
                         >;
