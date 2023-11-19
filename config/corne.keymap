@@ -20,12 +20,12 @@
 #define DK_EQ LS(N0) // = 
 #define DK_QUES UNDER // _ 
 #define DK_LESS NUBS // <
-#define DK_MORE LS(NUBS) // ERROR
+#define DK_MORE LS(NUBS) // >
 #define DK_PIPE RA(I) // |
 #define DK_QUOTE AT // "
 #define DK_AT RA(BSLH) // @
 #define DK_BSLH RA(RS(N7)) // 
-#define DK_SLH AMPS // ERROR
+#define DK_SLH AMPERSAND // ERROR
 #define DK_AMPS CARET // ampersand
 #define DK_DLLR GRAVE 
 
@@ -86,11 +86,10 @@
                 raise_layer {
                         bindings = <
 // |             |      !      |      "      |      #      |      $      |      %      |   |      &      |      /      |      {      |      }      |      *      |            | 
-        &trans       &kp EXCL     &kp DK_QUOTE   &kp HASH      &kp DK_DLLR   &kp PRCNT      &kp DK_AMPS     &trans    &kp DK_LCBR  &kp DK_RCBR   &kp KP_MULTIPLY    &trans
+        &trans       &kp EXCL     &kp DK_QUOTE   &kp HASH      &kp DK_DLLR   &kp PRCNT      &kp DK_AMPS     &kp DK_SLH    &kp DK_LCBR  &kp DK_RCBR   &kp KP_MULTIPLY    &trans
 // |             |             |             |             |             |             |   |      *      |      +      |       (     |      )      |      \      |            |
        &trans        &trans     &kp DK_LBRC   &kp  DK_RBRC   &kp DK_EQ       &trans         &kp KP_MULTIPLY &kp DK_PLUS  &kp DK_LPRN  &kp DK_RPRN     &kp BSLH        &trans
 // |             |             |             |             |             |             |   |      _      |      -      |    SEMI     |    COLON    |      ?      |            |
-//     &trans         &trans     &kp DK_LESS   &kp DK_MORE   &kp DK_PIPE     &trans          &kp UNDER     &kp DK_MINUS   &kp DK_SEMI  &kp DK_COLON  &kp DK_QUES      &trans
        &trans         &trans     &kp DK_LESS   &kp DK_MORE   &kp DK_PIPE     &trans          &kp UNDER     &kp DK_MINUS   &kp DK_SEMI  &kp DK_COLON  &kp DK_QUES      &trans
 //                                           |     CMD     |             |     SPC     |   |     ENT     |             |     ALT     |
                                                 &trans         &trans        &trans            &trans        &trans        &trans 
