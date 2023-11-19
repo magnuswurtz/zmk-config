@@ -25,8 +25,8 @@
 #define DK_QUOTE AT // "
 #define DK_AT RA(BSLH) // @
 #define DK_BSLH RA(RS(N7)) // \
-#define DK_SLH AMPS // /
-#define DK_AMPS CARET // &
+#define DK_SLH AMPS // slash
+#define DK_AMPS CARET // ampersand
 #define DK_DLLR GRAVE // $
 //#define DK_BTICK // `
 
@@ -88,7 +88,7 @@
                         bindings = <
 // |             |      !      |      "      |      #      |      $      |      %      |   |      &      |      /      |      {      |      }      |      *      |            | 
 //        &trans       &kp EXCL     &kp DK_QUOTE   &kp HASH      &kp DK_DLLR   &kp PRCNT      &kp DK_AMPS     &kp DK_SLH    &kp DK_LCBR  &kp DK_RCBR   &kp KP_MULTIPLY    &trans
-        &trans       &kp EXCL     &trans   &kp HASH      &trans   &kp PRCNT      &trans    &trans    &kp DK_LCBR  &kp DK_RCBR   &kp KP_MULTIPLY    &trans
+        &trans       &kp EXCL     &trans   &kp HASH      &trans   &kp PRCNT    &kp DK_AMPS     &kp DK_SLH    &kp DK_LCBR  &kp DK_RCBR   &kp KP_MULTIPLY    &trans
 // |             |             |             |             |             |             |   |      *      |      +      |       (     |      )      |      \      |            |
        &trans        &trans     &kp DK_LBRC   &kp  DK_RBRC   &kp DK_EQ       &trans         &kp KP_MULTIPLY &kp DK_PLUS  &kp DK_LPRN  &kp DK_RPRN     &kp BSLH        &trans
 // |             |             |             |             |             |             |   |      _      |      -      |    SEMI     |    COLON    |      ?      |            |
