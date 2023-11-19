@@ -13,38 +13,25 @@
 #define DK_OE SQT
 
 // Shifted characters
-//#define DK_SECT LSFT(KC_GRV)  // §
-//#define DK_EXLM LSFT(KC_1)    // !
-//#define DK_DQUO LSFT(KC_2)    // "
-//#define DK_HASH LSFT(KC_3)    // #
-//#define DK_CURR LSFT(KC_4)    // ¤
-//#define DK_PERC LSFT(KC_5)    // %
-//#define DK_AMPR LSFT(KC_6)    // &
-//#define DK_SLSH LSFT(KC_7)    // /
-//#define DK_LPRN LSFT(KC_8)    // (
-//#define DK_RPRN LSFT(KC_9)    // )
-//#define DK_EQL  LSFT(KC_0)    // =
-//#define DK_QUES LSFT(KC_MINS) // ?
-//#define DK_SCLN LSFT(KC_COMM)	// ;
-//define DK_TICK LSFT(KC_EQL)	// `
-#define DK_SEMI LSFT(COMMA)
-#define DK_COLON LSFT(DOT)
-#define DK_PLUS MINUS
-#define DK_MINUS FSLH
-#define DK_EQ LSFT(N0)
-#define DK_QUES UNDER
-#define DK_LESS BSLH
-#define DK_MORE LSFT(BLSH)
-#define DK_PIPE RALT(I)
-#define DK_QUOTE AT
-#define DK_AT RALT(BSLH)
-#define DK_BSLH RALT(RSFT(N7))
-#define DK_SLH AMPS
-#define DK_AMPS CARET
-#define DK_DLLR GRAVE //$
+#define DK_SEMI LS(COMMA) // ;
+#define DK_COLON LS(DOT) // :
+#define DK_PLUS MINUS // +
+#define DK_MINUS FSLH // -
+#define DK_EQ LS(N0) // = 
+#define DK_QUES UNDER // _ 
+#define DK_LESS BSLH // <
+#define DK_MORE LS(BLSH) // >
+#define DK_PIPE RA(I) // |
+#define DK_QUOTE AT // "
+#define DK_AT RA(BSLH) //@
+#define DK_BSLH RA(RS(N7)) // \
+#define DK_SLH AMPS // /
+#define DK_AMPS CARET // &
+#define DK_DLLR GRAVE // $
+//#define DK_BTICK // `
 
 // Alt-Gr keys
-#define DK_TICK BSLH
+#define DK_TICK BSLH // '
 #define DK_LPRN LS(N8)	// (
 #define DK_RPRN LS(N9)	// )
 #define DK_LCBR RA(RS(N8))  // {
@@ -103,7 +90,7 @@
        &trans       &kp EXCL     &kp DK_QUOTE   &kp HASH      &kp DK_DLLR   &kp PRCNT      &kp DK_AMPS &mt DK_SLH DK_BSLH &kp DK_LCBR  &kp DK_RCBR   &kp KP_MULTIPLY    &trans
 // |             |             |             |             |             |             |   |      *      |      +      |       (     |      )      |      \      |            |
        &trans        &trans     &kp DK_LBRC   &kp  DK_RBRC   &kp DK_EQ       &trans         &kp KP_MULTIPLY &kp DK_PLUS  &kp DK_LPRN  &kp DK_RPRN     &kp BSLH        &trans
-// |             |             |             |             |             |             |   |      _      |      -      |      SEMI      |      COLON      |     ?     |            |
+// |             |             |             |             |             |             |   |      _      |      -      |    SEMI     |    COLON    |      ?      |            |
        &trans         &trans     &kp DK_LESS   &kp DK_MORE   &kp DK_PIPE     &trans          &kp UNDER     &kp DK_MINUS   &kp DK_SEMI     &kp DK_COLON    &kp DK_QUES      &trans
 //                                           |     CMD     |             |     SPC     |   |     ENT     |             |     ALT     |
                                                 &trans         &trans        &trans            &trans        &trans        &trans 
