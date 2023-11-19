@@ -19,15 +19,15 @@
 #define DK_MINUS FSLH // -
 #define DK_EQ LS(N0) // = 
 #define DK_QUES UNDER // _ 
-#define DK_LESS NUBS // <
-#define DK_MORE LS(NUBS) // >
+#define DK_LESS GRAVE // <
+#define DK_MORE LS(GRAVE) // >
 #define DK_PIPE RA(I) // |
 #define DK_QUOTE AT // "
 #define DK_AT RA(BSLH) // @
 #define DK_BSLH RA(RS(N7)) // 
 #define DK_SLH AMPERSAND // ERROR
 #define DK_AMPS CARET // ampersand
-#define DK_DLLR GRAVE 
+#define DK_DLLR NUBS 
 
 // Alt-Gr keys
 #define DK_TICK BSLH // 
