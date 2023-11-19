@@ -31,7 +31,6 @@
 #define DK_COLON LSFT(DOT)
 #define DK_PLUS MINUS
 #define DK_MINUS FSLH
-#define DK_TICK PLUS
 #define DK_EQ LSFT(N0)
 #define DK_QUES UNDER
 #define DK_LESS BSLH
