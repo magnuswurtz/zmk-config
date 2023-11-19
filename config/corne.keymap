@@ -19,8 +19,8 @@
 #define DK_MINUS FSLH // -
 #define DK_EQ LS(N0) // = 
 #define DK_QUES UNDER // _ 
-#define DK_LESS BSLH // <
-#define DK_MORE LS(BLSH) // >
+#define DK_LESS NUBS // <
+#define DK_MORE LS(NUBS) // ERROR
 #define DK_PIPE RA(I) // |
 #define DK_QUOTE AT // "
 #define DK_AT RA(BSLH) // @
@@ -91,7 +91,7 @@
        &trans        &trans     &kp DK_LBRC   &kp  DK_RBRC   &kp DK_EQ       &trans         &kp KP_MULTIPLY &kp DK_PLUS  &kp DK_LPRN  &kp DK_RPRN     &kp BSLH        &trans
 // |             |             |             |             |             |             |   |      _      |      -      |    SEMI     |    COLON    |      ?      |            |
 //     &trans         &trans     &kp DK_LESS   &kp DK_MORE   &kp DK_PIPE     &trans          &kp UNDER     &kp DK_MINUS   &kp DK_SEMI  &kp DK_COLON  &kp DK_QUES      &trans
-       &trans         &trans     &kp DK_LESS   &trans   &kp DK_PIPE     &trans          &kp UNDER     &kp DK_MINUS   &kp DK_SEMI  &kp DK_COLON  &kp DK_QUES      &trans
+       &trans         &trans     &kp DK_LESS   &kp DK_MORE   &kp DK_PIPE     &trans          &kp UNDER     &kp DK_MINUS   &kp DK_SEMI  &kp DK_COLON  &kp DK_QUES      &trans
 //                                           |     CMD     |             |     SPC     |   |     ENT     |             |     ALT     |
                                                 &trans         &trans        &trans            &trans        &trans        &trans 
                         >;
