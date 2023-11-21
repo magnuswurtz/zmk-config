@@ -38,6 +38,7 @@
 #define DK_RCBR RA(RS(N9))	// }
 #define DK_LBRC RA(N8)	// [
 #define DK_RBRC RA(N9)	// ]
+#define CMD_SPC RG(SPACE)
 
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
@@ -67,8 +68,8 @@
         &trans       &kp A          &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L       &kp DK_AE      &trans
 // |             |      Z      |      X      |      C      |      V      |      B      |   |      N      |      M      |      ,      |      .      |      Ø      |            |
         &trans       &kp Z          &kp X         &kp C         &kp V         &kp B             &kp N         &kp M       &kp COMMA      &kp DOT      &kp DK_OE      &trans
-//                                           |    ALT      |  LWR / TAB  |  CMD / SPC  |   |   CTRL/ENT  |  RSE / BSPC |     SHIFT   |
-                                              &mt RALT ESC &lt 1 TAB   &mt RGUI SPACE    &mt LCTRL RET  &lt 2 BSPC    &kp LSHFT
+//                                           |  ALT / ESC  |  LWR / TAB  |  CMD / SPC  |   |   CTRL/ENT  |  RSE / BSPC |     SHIFT   |
+                                              &mt RALT ESC &lt 1 TAB   &ht_tp RGUI SPACE    &ht_tp LCTRL RET  &lt 2 BSPC    &kp LSHFT
                         >;
                 };
                 lower_layer {
@@ -80,7 +81,7 @@
 // |             |    BT 1    |     BT 2    |     BT 3    |             |             |   |             |             |             |             |      Å       |             | 
        &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &trans         &trans           &trans        &trans        &trans        &trans      &kp DK_AA       &trans
 //                                          |             |             |             |   |             |             |             |           
-                                                &trans         &trans        &trans          &trans        &trans       &trans
+                                                &trans         &trans        &trans          &trans        &kp  BSPC       &trans
                         >;
                 };
 
@@ -92,8 +93,8 @@
        &trans        &trans     &kp DK_LBRC   &kp  DK_RBRC   &kp DK_EQ       &trans         &kp KP_MULTIPLY &kp DK_PLUS  &kp DK_LPRN  &kp DK_RPRN     &kp BSLH        &trans
 // |             |             |             |             |             |             |   |      _      |      -      |    SEMI     |    COLON    |             |            |
        &trans         &trans     &kp DK_LESS   &kp DK_MORE   &kp DK_PIPE     &trans          &kp DK_UNDER &kp DK_MINUS   &kp DK_SEMI  &kp DK_COLON  &kp DK_QUES      &trans
-//                                           |     CMD     |             |     SPC     |   |     ENT     |             |     ALT     |
-                                                &trans         &trans        &trans            &trans        &trans        &trans 
+//                                           |     CMD     |             | CMD+SPACE   |   |     ENT     |             |     ALT     |
+                                                &trans         &trans      &kp CMD_SPC         &trans        &trans        &trans 
                         >;
                 };
         };
