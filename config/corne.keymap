@@ -70,9 +70,7 @@
                         bindings = <&kp>, <&kp>;
                 };
         };
-        &lt {
-                quick-tap-ms = <200>; //Dobbelt tab indenfor den tid giver altid TAP behaviour - til delete
-        };
+   
 
         keymap {
                 compatible = "zmk,keymap";
