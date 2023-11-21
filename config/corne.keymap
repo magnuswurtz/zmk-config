@@ -49,6 +49,8 @@
     layers = <0>; \
   };
 
+  
+
 / {
 
         combos {
@@ -56,6 +58,15 @@
             COMBO(AA, &kp DK_AA, 13 22) // z & ø giver å 
             COMBO(LOCK, &kp C_PWR, 1 10)
         };
+
+            behaviors {
+                http: hold_tap_tap_preferred {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "hold_tap_tap_preferred";
+                        flavor = "tap-preferred";
+                        tapping-term-ms = <300>;
+                };
+        }
 
         keymap {
                 compatible = "zmk,keymap";
@@ -69,7 +80,7 @@
 // |             |      Z      |      X      |      C      |      V      |      B      |   |      N      |      M      |      ,      |      .      |      Ø      |            |
         &trans       &kp Z          &kp X         &kp C         &kp V         &kp B             &kp N         &kp M       &kp COMMA      &kp DOT      &kp DK_OE      &trans
 //                                           |  ALT / ESC  |  LWR / TAB  |  CMD / SPC  |   |   CTRL/ENT  |  RSE / BSPC |     SHIFT   |
-                                              &mt RALT ESC &lt 1 TAB   &ht_tp RGUI SPACE    &ht_tp LCTRL RET  &lt 2 BSPC    &kp LSHFT
+                                              &mt RALT ESC &lt 1 TAB   &http RGUI SPACE    &http LCTRL RET  &lt 2 BSPC    &kp LSHFT
                         >;
                 };
                 lower_layer {
