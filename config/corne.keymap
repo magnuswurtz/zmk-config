@@ -106,7 +106,7 @@
 // |             |      !      |      "      |      #      |      $      |      %      |   |      &      |      /      |      {      |      }      |     @       |            | 
         &trans       &kp EXCL     &kp DK_QUOTE   &kp HASH      &kp DK_DLLR   &kp PRCNT      &kp DK_AMPS &mt DK_BSLH DK_SLH &kp DK_LCBR  &kp DK_RCBR   &kp DK_AT    &trans
 // |             |      '      |             |             |             |             |   |      *      |      +      |       (     |      )      |      \      |            |
-       &trans        DK_TICK     &kp DK_LBRC   &kp  DK_RBRC   &kp DK_EQ       &trans         &kp KP_MULTIPLY &kp DK_PLUS  &kp DK_LPRN  &kp DK_RPRN     &kp BSLH        &trans
+       &trans       &kp DK_TICK  &kp DK_LBRC   &kp  DK_RBRC   &kp DK_EQ       &trans         &kp KP_MULTIPLY &kp DK_PLUS  &kp DK_LPRN  &kp DK_RPRN     &kp BSLH        &trans
 // |             |             |             |             |             |             |   |      _      |      -      |    SEMI     |    COLON    |             |            |
        &trans         &trans     &kp DK_LESS   &kp DK_MORE   &kp DK_PIPE     &trans          &kp DK_UNDER &kp DK_MINUS   &kp DK_SEMI  &kp DK_COLON  &kp DK_QUES      &trans
 //                                           |     CMD     |             | CMD+SPACE   |   |     ENT     |             |     ALT     |
