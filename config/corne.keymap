@@ -29,7 +29,9 @@
 #define DK_AMPS CARET // ampersand
 #define DK_DLLR NUBS 
 #define DK_UNDER LS(FSLH)
-
+#define DK_TILDE RA(RBRC)
+#define DK_HAT LS(RBRC)
+#define DK_UMLAUT RBRC
 #define DK_TICK BSLH // 
 #define DK_LPRN LS(N8)	// (
 #define DK_RPRN LS(N9)	// )
@@ -103,11 +105,11 @@
                 raise_layer {
                         bindings = <
 // |             |      !      |      "      |      #      |      $      |      %      |   |      &      |      /      |      {      |      }      |     @       |            | 
-        &trans       &kp EXCL     &kp DK_QUOTE   &kp HASH      &kp DK_DLLR   &kp PRCNT      &kp DK_AMPS &mt DK_BSLH DK_SLH &kp DK_LCBR  &kp DK_RCBR   &kp DK_AT    &trans
-// |             |      '      |             |             |             |             |   |      *      |      +      |       (     |      )      |      \      |            |
-       &trans       &kp DK_TICK  &kp DK_LBRC   &kp  DK_RBRC   &kp DK_EQ       &trans         &kp KP_MULTIPLY &kp DK_PLUS  &kp DK_LPRN  &kp DK_RPRN     &kp BSLH        &trans
-// |             |             |             |             |             |             |   |      _      |      -      |    SEMI     |    COLON    |             |            |
-       &trans         &trans     &kp DK_LESS   &kp DK_MORE   &kp DK_PIPE     &trans          &kp DK_UNDER &kp DK_MINUS   &kp DK_SEMI  &kp DK_COLON  &kp DK_QUES      &trans
+        &trans       &kp EXCL     &kp DK_QUOTE   &kp HASH      &kp DK_DLLR   &kp PRCNT      &kp DK_AMPS &mt DK_BSLH DK_SLH &kp DK_LCBR &kp DK_RCBR   &kp DK_AT    &trans
+// |             |      '      |      [      |      ]      |      =      |      ~      |   |      *      |      +      |       (     |      )      |      '      |            |
+       &trans       &kp DK_TICK  &kp DK_LBRC   &kp  DK_RBRC   &kp DK_EQ    &kp DK_TILDE    &kp KP_MULTIPLY &kp DK_PLUS  &kp DK_LPRN   &kp DK_RPRN   &kp DK_TICK   &trans
+// |             |      ¨      |      <      |      >      |      |      |      ^      |   |      _      |      -      |    SEMI     |    COLON    |             |            |
+       &trans     &kp DK_UMLAUT &kp DK_LESS   &kp DK_MORE   &kp DK_PIPE   &kp DK_HAT       &kp DK_UNDER  &kp DK_MINUS   &kp DK_SEMI  &kp DK_COLON   &kp DK_QUES   &trans
 //                                           |     CMD     |             | CMD+SPACE   |   |     ENT     |             |     ALT     |
                                                 &trans         &trans      &kp CMD_SPC         &trans        &trans        &trans 
                         >;
