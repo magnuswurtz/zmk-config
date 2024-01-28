@@ -29,8 +29,8 @@
 #define DK_AMPS CARET // ampersand
 #define DK_DLLR NUBS 
 #define DK_UNDER LS(FSLH)
-#define DK_TILDE LA(RBRC)
-#define DK_HAT RS(RBRC)
+#define DK_TILDE LA(RBKT)
+#define DK_HAT RS(RBKT)
 #define DK_UMLAUT RBRC
 #define DK_TICK BSLH // 
 #define DK_LPRN LS(N8)	// (
