@@ -30,8 +30,8 @@
 #define DK_DLLR NUBS 
 #define DK_UNDER LS(FSLH)
 #define DK_TILDE LA(RBKT)
-#define DK_HAT RS(RBKT)
-#define DK_UMLAUT RBRC
+#define DK_HAT RBRC
+#define DK_UMLAUT LG(RBKT)
 #define DK_TICK BSLH // 
 #define DK_LPRN LS(N8)	// (
 #define DK_RPRN LS(N9)	// )
